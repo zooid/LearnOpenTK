@@ -56,7 +56,7 @@ namespace LearnOpenTK.Common
             // And then link them together.
             LinkProgram(Handle);
 
-            // When the shader program is linked, it no longer needs the individual shaders attacked to it; the compiled code is copied into the shader program.
+            // When the shader program is linked, it no longer needs the individual shaders attached to it; the compiled code is copied into the shader program.
             // Detach them, and then delete them.
             GL.DetachShader(Handle, vertexShader);
             GL.DetachShader(Handle, fragmentShader);
